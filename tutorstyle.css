@@ -44,7 +44,6 @@ body {
   cursor: pointer;
 }
 
-/* Hero */
 .hero {
   display: flex;
   flex-wrap: wrap;
@@ -90,15 +89,13 @@ body {
   margin-top: 2em;
 }
 
-/* ---- color palette ---- */
 :root {
-  --primary:   #2a9d8f;  /* minty teal */
-  --secondary: #e76f51;  /* coral */
-  --light:     #f7f1e3;  /* warm ivory */
-  --dark:      #264653;  /* deep slate */
+  --primary:   #2a9d8f;
+  --secondary: #e76f51; 
+  --light:     #f7f1e3;
+  --dark:      #264653; 
 }
 
-/* Consultation Section */
 .consultation {
   background: var(--light);
   padding: 4em 2em;
@@ -111,7 +108,6 @@ body {
   align-items: flex-start;
   gap: 2em;
 }
-/* Text column */
 .consultation-text {
   flex: 1 1 40%;
 }
@@ -125,7 +121,6 @@ body {
   color: var(--dark);
   margin-bottom: 1.5em;
 }
-/* Form column */
 .consult-form {
   flex: 1 1 50%;
   display: flex;
@@ -168,22 +163,19 @@ body {
   opacity: 0.9;
 }
 
-/* Decorative shapes (optional) */
 .decorative-shapes {
-  position: absolute; /* or background-image */
-  /* use clip-path or SVG here as you like */
+  position: absolute;
 }
 
-/* Responsive tweaks */
 @media (max-width: 800px) {
   .consultation-container {
     flex-direction: column;
   }
 }
 :root {
-  --footer-bg:    #0047b3;   /* deep blue */
+  --footer-bg:    #0047b3;
   --footer-text:  #ffffff;
-  --footer-hover: #e76f51;   /* coral, adjust to your brand */
+  --footer-hover: #e76f51; 
 }
 
 .site-footer {
@@ -199,7 +191,7 @@ body {
   gap: 2em;
 }
 .footer-col {
-  flex: 1 1 180px;     /* grow, shrink, base width */
+  flex: 1 1 180px; 
 }
 .footer-col ul {
   list-style: none;
@@ -219,12 +211,11 @@ body {
   color: var(--footer-hover);
 }
 
-/* Center column overrides */
 .footer-center {
   text-align: center;
 }
 .footer-logo {
-  width: 80px;           /* adjust as needed */
+  width: 80px; 
   margin-bottom: 0.5em;
 }
 .tagline {
@@ -244,13 +235,11 @@ body {
   color: var(--footer-hover);
 }
 
-/* Location column */
 .footer-locations ul {
-  columns: 2;            /* two-column list */
+  columns: 2; 
   column-gap: 1.5em;
 }
 
-/* Responsive: stack on small screens */
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;
