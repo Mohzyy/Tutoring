@@ -1,0 +1,262 @@
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #222;
+}
+
+.top-bar {
+  background: #f1f1f1;
+  text-align: center;
+  font-size: 14px;
+  padding: 5px 0;
+}
+.top-bar a {
+  color: #0044cc;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 2em;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0077cc;
+}
+.navbar nav a {
+  margin: 0 1em;
+  text-decoration: none;
+  color: #444;
+}
+.cta-button {
+  background: #f7931e;
+  color: white;
+  padding: 0.6em 1.2em;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 3em 2em;
+  background: #f0f8ff;
+}
+.hero-text {
+  flex: 1 1 50%;
+  max-width: 600px;
+}
+.hero-text h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.3em;
+}
+.hero-text h2 {
+  font-size: 1.4em;
+  color: #0055cc;
+}
+.hero-text p {
+  font-size: 1.1em;
+  margin: 1em 0;
+}
+.hero-buttons button {
+  margin-right: 1em;
+  padding: 0.8em 1.5em;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.primary-btn {
+  background: #0055cc;
+  color: white;
+}
+.secondary-btn {
+  background: #eee;
+  color: #333;
+}
+.hero-image img {
+  max-width: 50%;
+  border-radius: 20px;
+  flex: 1 1 40%;
+  margin-top: 2em;
+}
+
+/* ---- color palette ---- */
+:root {
+  --primary:   #2a9d8f;  /* minty teal */
+  --secondary: #e76f51;  /* coral */
+  --light:     #f7f1e3;  /* warm ivory */
+  --dark:      #264653;  /* deep slate */
+}
+
+/* Consultation Section */
+.consultation {
+  background: var(--light);
+  padding: 4em 2em;
+}
+.consultation-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 2em;
+}
+/* Text column */
+.consultation-text {
+  flex: 1 1 40%;
+}
+.consultation-text h2 {
+  font-size: 2em;
+  color: var(--dark);
+  margin-bottom: 0.5em;
+}
+.consultation-text p {
+  font-size: 1.1em;
+  color: var(--dark);
+  margin-bottom: 1.5em;
+}
+/* Form column */
+.consult-form {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.consult-form input,
+.consult-form textarea {
+  border: 2px solid var(--dark);
+  border-radius: 25px;
+  padding: 0.8em 1em;
+  font-size: 1em;
+  font-family: inherit;
+}
+.consult-form input:focus,
+.consult-form textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+.sms-consent {
+  font-size: 0.85em;
+  color: var(--dark);
+}
+.sms-consent input {
+  margin-right: 0.5em;
+  transform: scale(1.2);
+}
+.send-btn {
+  align-self: flex-start;
+  background: var(--secondary);
+  color: white;
+  border: none;
+  padding: 0.8em 2em;
+  border-radius: 30px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.send-btn:hover {
+  opacity: 0.9;
+}
+
+/* Decorative shapes (optional) */
+.decorative-shapes {
+  position: absolute; /* or background-image */
+  /* use clip-path or SVG here as you like */
+}
+
+/* Responsive tweaks */
+@media (max-width: 800px) {
+  .consultation-container {
+    flex-direction: column;
+  }
+}
+:root {
+  --footer-bg:    #0047b3;   /* deep blue */
+  --footer-text:  #ffffff;
+  --footer-hover: #e76f51;   /* coral, adjust to your brand */
+}
+
+.site-footer {
+  background: var(--footer-bg);
+  color: var(--footer-text);
+  padding: 4em 2em;
+}
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+.footer-col {
+  flex: 1 1 180px;     /* grow, shrink, base width */
+}
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-col ul li {
+  margin-bottom: 0.75em;
+  font-size: 0.95em;
+}
+.footer-col ul li a {
+  color: var(--footer-text);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-col ul li a:hover {
+  color: var(--footer-hover);
+}
+
+/* Center column overrides */
+.footer-center {
+  text-align: center;
+}
+.footer-logo {
+  width: 80px;           /* adjust as needed */
+  margin-bottom: 0.5em;
+}
+.tagline {
+  font-size: 0.9em;
+  margin-bottom: 1em;
+  opacity: 0.9;
+}
+.footer-center a {
+  display: inline-block;
+  margin: 0.3em;
+}
+.social-links a {
+  font-size: 1.2em;
+  color: var(--footer-text);
+}
+.social-links a:hover {
+  color: var(--footer-hover);
+}
+
+/* Location column */
+.footer-locations ul {
+  columns: 2;            /* two-column list */
+  column-gap: 1.5em;
+}
+
+/* Responsive: stack on small screens */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-locations ul {
+    columns: 1;
+  }
+}
